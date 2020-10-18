@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Animate on Scroll - Pure CSS/JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:300,700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="hero" data-animation="fadeIn">
+  <h1>
+    <div class="title" data-animation="slideInUp" data-animation-delay="600ms"><b>Animate</b></div>
+    <div class="subtitle" data-animation="slideInUp" data-animation-delay="1000ms">On Scroll</div>
+  </h1>
+</header>
+
+<section>
+  <h1><b>Slide</b> Animation</h1>
+  <div class="box" data-animation="slideInRight"></div>
+  <div class="box" data-animation="slideInUp" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="slideInDown" data-animation-delay="600ms"></div>
+  <div class="box" data-animation="slideInLeft" data-animation-delay="900ms"></div>
+</section>
+
+<section>
+  <h1><b>Zoom</b> Animation</h1>
+  <div class="box" data-animation="zoomIn"></div>
+  <div class="box" data-animation="zoomIn" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="zoomIn" data-animation-delay="600ms"></div>
+</section>
+
+<section>
+  <h1><b>Reverse Zoom</b> Animation</h1>
+  <div class="box" data-animation="zoomReverseIn"></div>
+  <div class="box" data-animation="zoomReverseIn" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="zoomReverseIn" data-animation-delay="600ms"></div>
+</section>
+
+<section>
+  <h1><b>Fade</b> Animation</h1>
+  <div class="box" data-animation="fadeIn"></div>
+  <div class="box" data-animation="fadeIn" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="fadeIn" data-animation-delay="600ms"></div>
+</section>
+
+<section>
+  <h1><b>Flip</b> Animation</h1>
+  <div class="box" data-animation="flipInY"></div>
+  <div class="box" data-animation="flipInY" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="flipInY" data-animation-delay="600ms"></div>
+</section>
+
+
+
+<style>
+  * { box-sizing: border-box; line-height: calc(1em + 0.25rem); }
+  html { font: 18px/1.5 'Nunito', sans-serif; }
+  body { margin: 0; min-height: 100vh; overflow-x: hidden; color: rgba(0,0,0,.5); font-weight: 300; }
+  h1 { width: 100%; font-weight: 300; text-align: center; margin: 0 0 4rem; font-size: 3rem; }
+  b { font-weight: 700; }
+  header, section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 3rem 1rem;
+  }
+  header { background: radial-gradient(circle at top left, hsl(340, 80%, 50%), hsl(270, 80%, 50%)); color: #fff; }
+  header h1 { margin: 0; color: #fff; }
+  header .title { font-size: 5rem; }
+  header .subtitle { font-size: 4rem; }
+  section:nth-child(odd) { background: whitesmoke; }
+  .box {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+    background: radial-gradient(circle at top left, hsl(340, 80%, 50%), hsl(270, 80%, 50%));
+    border-radius: 2rem;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  }
+</style>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
